@@ -8,21 +8,19 @@ function solve(base, increment) {
 
     for (let i = 1; i <= base / 2; i++) {
         countOfSteps += 1
+        stone += (width - 2) * (width - 2) * increment;
+        width = width - 2;
 
         if (i % 5 === 0) {
-            stone += (width - 2) * (width - 2) * increment
             lapis += ((width - 1) * 4 * increment)
-            width = width - 2;
         } else {
-            stone += (width - 2) * (width - 2) * increment
             marble += ((width - 1) * 4 * increment)
-            width = width - 2;
         }
-
     }
     let height = countOfSteps * increment;
+
     console.log(
-        `Stone required: ${stone}
+    `Stone required: ${stone}
     Marble required: ${marble}
     Lapis Lazuli required: ${lapis}
     Gold required: ${1}
