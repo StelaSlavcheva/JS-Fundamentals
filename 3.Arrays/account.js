@@ -21,11 +21,11 @@ function peterAccount(arr) {
             account.push(game);
 
         } else if (command === 'Expansion') {
-            let [game1, expansion] = game('-')
+            let [game1, expansion] = game.split('-')
             if(account.includes(game1)){
                 let gameIndex = account.indexOf(game1);
             let replace = game1 + ':' + expansion
-            account.splice(gameIndex, 1, replace)
+            account.splice(gameIndex+1, 0, replace)
             }
             
 
@@ -34,7 +34,7 @@ function peterAccount(arr) {
         }
 
     }
-    console.log(account)
+    console.log(account.join(' '))
 }
 peterAccount(['CS WoW Diablo',
     'Install LoL',
