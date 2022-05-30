@@ -1,5 +1,6 @@
     function isMagicSquare(mat)   {
         let N = mat.length
+        
         // sumd1 and sumd2 are the sum of the two diagonals
         let sumd1 = 0,sumd2=0;
         for (let i = 0; i < N; i++)
