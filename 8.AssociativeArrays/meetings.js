@@ -10,7 +10,7 @@ function meetings(arr) {
             console.log(`Conflict on ${day}!`)
         }
     }
-    for (key in obj) {
+       for (key in obj) {
         console.log(`${key} -> ${obj[key]}`)
     }
 
