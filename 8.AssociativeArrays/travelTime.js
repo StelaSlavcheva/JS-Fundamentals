@@ -23,7 +23,6 @@ function travelTime(input) {
     let result = sorted.sort(([keyA, valueA],[keyB, valueB]) => keyA.localeCompare(keyB));
     result.sort(([keyA, valueA],[keyB, valueB]) => valueA - valueB)
     console.log(result)
-
 }
 
 travelTime([
